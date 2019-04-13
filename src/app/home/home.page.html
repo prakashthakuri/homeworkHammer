@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+Hammer Playground
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+    <ion-card (press)="handlePress()">
+
+
+    <ion-card-content>
+
+    Press <br/>
+    {{click}}
+</ion-card-content>
+    </ion-card>
+
+    <ion-card (pan) = "handlePan($event)">
+
+    <ion-card-content>
+    Pan
+</ion-card-content>
+
+
+    </ion-card>
+
+
+    <ion-card (swipe) = "handleSwipe()">
+    <ion-card-content>
+    Swipe
+</ion-card-content>
+</ion-card>
+
+<ion-card (tap) = "handleTap()">
+    <ion-card-content>
+   Tap
+</ion-card-content>
+</ion-card>
+
+
+
+
+
+</ion-content>
